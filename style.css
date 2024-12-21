@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cursor{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 12;
+    box-shadow: 1px 1px 1px white;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg,rgb(21, 73, 245),rgb(2, 41, 87));
+}
+header .nav-bar{
+    display: flex;
+    width: 90%;
+    margin: 5px;
+    top: 10px;
+    position: fixed;
+    padding: 10px;
+    color: white;
+    z-index: 9;
+    justify-content: space-between;
+}
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+}
+.nav-bar ul li{
+    position: relative;
+    margin-right: 50px;
+}
+.nav-bar .menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+header .sidebar{
+    cursor: pointer;
+    font-size: 23px;
+}
+#check{
+    display: none;
+    cursor: pointer;
+}
+#check:checked ~ label{
+    display: none;
+}
+.pepsi-can-heading{
+    position: absolute;
+    top: 17%;
+    left: -67%;
+    color: white;
+    font-size: 25vw;
+    animation: pepsiheading 3s linear;
+}
+header .img1{
+    z-index: 2;
+    position: absolute;
+    width: 350px;
+    top: 10%;
+    left: 39%;
+    rotate: 25deg;
+    animation: pepsican 2s alternate infinite;
+    filter: drop-shadow(2px 2px 4px rgb(150, 163, 235));
+}
+@keyframes pepsican{
+    100%{
+        transform: translateY(30px);
+    }
+}
+header .img2{
+    left: 74.7%;
+    top: 10%;
+    width: 25vw;
+    position: absolute;
+}
+.pepsiabout{
+    width: 100%;
+    height: 100vh;
+    border-top: 1px solid black;
+    background: linear-gradient(-20deg, black, rgb(255, 0, 34));
+}
+.content .pepsiheading{
+    font-size: 0px;
+}
+.pepsiabout .pepsibuy{
+    background: none;
+    position: relative;
+    top: 10%;
+    left: 40%;
+    font-size: 30px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;
+}
+.pepsiabout .content p{
+    text-align: justify;
+    margin-top: 100px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.795);
+    font-family: "Kalam", cursive;
+    
+}
+.pepsiabout .content{
+    position: relative;
+    left: 43%;
+    top: 10%;
+    width: 53vw;
+    height: 81vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.pepsiabout .contentfooter{
+    position: relative;
+    width: 100%;
+    height:120px;
+    z-index: 2;
+    background-color: rgba(20, 19, 19, 0.658);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contentfooter .levels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    text-align: justify;
+    padding: 13px;
+    color: rgba(255, 255, 255, 0.548);
+}
+.contentfooter .levels h1{
+    margin-right: 20px;
+    padding: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.596);
+}
+
+main .monstorcan{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+.monstorcan .content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    top: 10%;
+}
+.content .header{
+    width: 40%;
+    height: 450px;
+    color: rgba(255, 255, 255, 0.788);
+}
+.content .header h3{
+    margin-left: 18%;
+    margin-top: 10%;
+    font-family: "Kalam", cursive;
+}
+.content .header h2{
+    margin-left: 22%;
+    margin-top: 4%;
+    font-size: 40px;
+    font-family: "Cinzel", serif;
+    color: rgb(31, 243, 31)
+}
+.content .header p{
+    margin-top: 7%;
+    margin-left: 5%;
+    font-family: "Kalam", cursive;
+}
+.content .header .button{
+    margin-top: 7%;
+    margin-left: 30%;
+    width: 150px;
+    height: 28px;
+    outline: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15%;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    box-shadow: 2px 1.5px 10px rgb(5, 175, 5);
+    overflow: hidden;
+}
+.content .header button{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.content .header .button:hover{
+    background: rgb(5, 175, 5);
+    box-shadow: 2px 1.5px 10px rgba(255, 255, 255, 0.808);
+    
+}  
+.content .header .advice{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.content .header .advice p{
+    border-left: 2px solid rgb(5, 175, 5);
+    padding: 10px;
+}
+.content .can{
+    width: 30%;
+    height: 450px;
+}
+.content .can img{
+    width: 450px;
+    height: 400px;
+    position: relative;
+    left: -8%;
+    top: 8%;
+    z-index: 2;
+    filter: drop-shadow(2px 2px 2px rgb(24, 109, 29));
+    animation: monstercan 3s alternate infinite;
+    
+}
+@keyframes monstercan{
+    100%{
+        transform: translateY(9%);
+    }
+}
+.content .can::before{
+    content: '';
+    top: 50.2%;
+    margin-left: 2%;
+    width: 25%;
+    height: 100px;
+    rotate: -4deg;
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.521);
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.767);
+    animation: monbefore 3s alternate infinite;
+}
+@keyframes monbefore{
+    100%{
+        transform: translateY(38%);
+        border-color: green;
+        box-shadow: 3px 3px 5px green;
+    }
+}
+.content .can::after{
+    content: '';
+    left: 43%;
+    top: 24%;
+    position: absolute;
+    width: 22%;
+    height: 100px;
+    rotate: 135deg;
+    background: rgb(40, 247, 40);
+    border-radius: 20% 20% 20% 20% / 60% 40% 60% 40%;
+    animation: monafter 3s alternate infinite;
+    
+}
+@keyframes monafter{
+    100%{
+        transform: translateY(30%);
+        top: 22%;
+        rotate: 150deg;
+        border-radius: 10% 30% 20% 30% / 10% 30% 50% 60%;
+    }
+}
+.content .rating{
+    width: 30%;
+    height: 450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Kalam", cursive;
+}
+.content .rating .rate{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    
+}
+.content .rating .rate::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    top: 50%;
+    left: 30%;
+    background: rgb(11, 153, 11);
+    rotate: 140deg;
+    border-radius: 0px 40px 5px 50%;
+}
+.content .rating h1{
+    position: relative;
+    top: 35%;
+}
+.content .rating h3{
+    position: relative;
+    top: 33%;
+}
+
+/*   Carousel  */
+
+.carousel{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.list{
+    width: 100%;
+    height: 100%;
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+}
+.item img.fruit{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    pointer-events: none;
+}
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 12rem;
+    color: #eee;
+    font-weight: bold;
+    font-family: system-ui;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.item.active{
+    display: block;
+}
+.item.hidden{
+    display: block;
+    pointer-events: none;
+    background-color: transparent;
+    z-index: 1;
+}
+
+
+#prev,
+#next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #eee9;
+    background-color: #eee5;
+    color: #eee;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 15;
+}
+#prev{
+    left: 20px;
+}
+#next{
+    right: 20px;
+}
+
+
+@keyframes toActive{
+    from{
+        top: 100%;
+        opacity: 0;
+    }
+}
+@keyframes toOut{
+    from{
+        top: 50%;
+        opacity: 1;
+    }
+}
+.item.active img.fruit{
+    animation: toActive 0.5s ease-in-out 1;
+}
+.item.hidden img.fruit{
+    animation: toOut 0.8s ease-in-out 1;
+    top: -100%;
+    opacity: 0;
+}
+.item.active .content{
+    animation: toActive 0.8s ease-in-out 1;
+}
+.item.hidden .content{
+    opacity: 0;
+}
+
+
+.carousel.right .item.active img.fruit{
+    animation: toActivePrev 0.5s ease-in-out 1;
+}
+.carousel.right .item.hidden img.fruit{
+    animation: toOut 0.8s ease-in-out 1;
+    top: 100%;
+    opacity: 0;
+}
+.carousel.right .item.active .content{
+    animation: toActivePrev 0.8s ease-in-out 1;
+}
+
+
+@keyframes toActivePrev{
+    from{
+        top: 0;
+        opacity: 0;
+    }
+}
+
+:root{
+    --width-mockup: calc(371px / 1.5);
+    --height-mockup: calc(673px / 1.5);
+}
+
+.mockup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    --left: 0%;
+    transform: translate(-50%, -50%);
+    height: var(--height-mockup);
+    width: var(--width-mockup);
+    background: 
+        url(drink-soda.png)  0 0 no-repeat, 
+        url(listSoda.jpg) var(--left) 0;
+    background-size: auto 100%;
+    background-blend-mode: multiply;
+    -webkit-mask-image: 
+    url(drink-soda.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: auto 100%;
+    transition: background 0.5s;
+}
+
+.leaves{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background-image: url(leaves.png);
+    background-size: 100%;
+    top: calc((50% - (var(--height-mockup) / 1.7)));
+    left: calc((50% + (var(--width-mockup) / 5)));
+}
+.shadow{
+    width: var(--width-mockup);
+    height: 100px;
+    background-color: #0008;
+    border-radius: 50%;
+    position: absolute;
+    top:  calc((50% + (var(--height-mockup) / 2)));
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(20px);
+}
+@media screen and (max-width: 768px) {
+    .item .content{
+        transform: translate(-50%, -50%) scale(.5);
+    }
+    .item img.fruit{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+} 
+
+/*   Fanta    */
+
+main .fantapage{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255, 196, 0), rgb(255, 208, 0));
+}
+.fantapage .canimg .fantacan{
+    position: relative;
+    margin-top: 8%;
+    left: 30%;
+    rotate: 110deg;
+}
+.canimg h1{
+    color: white;
+    position: absolute;
+    font-size: 350px;
+    left: -14%;
+    margin-top: 10%;
+}
+.canimg .orange{
+    position: absolute;
+    margin-top: 34%;
+    left: 35%;
+
+}
+.canimg .oranges{
+    position: absolute;
+    margin-top: 30%;
+    left: 81%;
+}
+.canimg .leave{
+    position: absolute;
+    margin-top: 0%;
+    left: 0%;
+}
